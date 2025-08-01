@@ -56,6 +56,8 @@ const CardMeteo = (props) => {
                 <p className="fs-3">
                   {(meteo.main.temp - 273.15).toFixed(1)}°C
                 </p>
+                <p className="fs-3">
+                {meteo.rain ? `rain: ${meteo.rain["1h"]} mm` : "no rain"}</p>
                 <Button
                   className="border border-light fs-3 mt-3"
                   onClick={() => navigate(`/MeteoFive/${meteo.id}`)}>
