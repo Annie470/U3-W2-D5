@@ -52,7 +52,15 @@ const Hero = (props) => {
   return (
     <>
       {isError || !geo ? (
-        <p className="text fs-2">Hello, {props.name}</p>
+        <Container className="p-4">
+            <Row className="justify-content-center">
+              <Col xs={10} className="text-center text fs-2">
+                <p>
+                  Hello, {props.name}
+                </p>
+              </Col>
+            </Row>
+          </Container>
       ) : (
         <>
           <Container className="p-4">
