@@ -54,18 +54,18 @@ const MeteoFive = () => {
             {meteo && meteo.city && (
               <>
                 <p>
-                  In {meteo.city.name}, such events are fated to unfold... It
+                  In <span className="title fw-bold">{meteo.city.name}</span>, such events are fated to unfold... It
                   shall be!
                 </p>
-                <Row className="row-cols-1 row-cols-md-2 row-cols-lg-5 py-5">
+                <Row className="row-cols-1 row-cols-md-2 row-cols-lg-5 py-5 gy-3 justify-content-center">
                   {meteo.list
                     .filter((item) => item.dt_txt.includes("15:00:00"))
                     .map((item, index) => (
-                      <Col key={item.dt} className="mb-3">
-                        <p>Day {index + 1}</p>
+                      <Col key={item.dt} className="mb-3 pt-2 border-top border-light">
+                        <p className="title fs-2 fw-bold">Day {index + 1}</p>
                         <p>{item.weather[0].description}</p>
                         <p>{(item.main.temp - 273.15).toFixed(1)}°C</p>
-                        {item.rain ? `Rain: ${item.rain["3h"]} mm` : "No rain"}
+                        {item.rain ? `rain: ${item.rain["3h"]} mm` : "no rain"}
                       </Col>
                     ))}
                 </Row>

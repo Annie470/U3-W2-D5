@@ -17,7 +17,7 @@ const ZInput = (props) => {
       <Container className="mb-5">
         <Form onSubmit={forHero}>
           <Form.Group controlId="form" className="text-center">
-            <Form.Label className="text fs-3">What's your name?</Form.Label>
+            <Form.Label className="text fs-3">What's your <span className="title fw-bold">name</span>?</Form.Label>
             <Form.Control
               className="w-50 mx-auto fs-4 fw-bold text-center title-no-color"
               type="text"

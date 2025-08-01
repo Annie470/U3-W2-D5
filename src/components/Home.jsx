@@ -10,7 +10,7 @@ const Home = () => {
   const [upInput, setUpInput] = useState(true);
   return (
     <>
-      <Container fluid className="bg-primary p-4">
+      <Container fluid className="bg-primary mt-5 pt-5 px-4">
         {upInput && (
           <ZInput
             setName={setName}

@@ -14,7 +14,7 @@ const InputCity = (props) => {
         <>
             <Form onSubmit={formSub}>
                 <Form.Group controlId="form" className='text-center'>
-                    <Form.Label className='text fs-3'>Hark, seeker of wisdom. Which city should I observe?</Form.Label>
+                    <Form.Label className='text fs-3'>Hark, seeker of wisdom. Which <span className="title fw-bold">city</span> should I observe?</Form.Label>
                     <Form.Control className='w-50 mx-auto fs-4 fw-bold text-center title-no-color'
                         type="text"
                         placeholder=""
