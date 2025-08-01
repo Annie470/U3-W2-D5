@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Zen+Loop:ital@0;1&display=swap');
+
+
+//NIENTE DECORAZIONI
+.no-underline {
+    text-decoration: none;
+    &:visited {
+    color: black;
+    }
+}
+
+//COLORI  //#13ffc0;
+$primary: #0d072a;
+$tertiary: #ff0077;
+$light:#f3eeff;
+
+//FONT
+$fontAlumni : "Alumni Sans Pinstripe", sans-serif;
+$fontZen : "Zen Loop", cursive;
+
+.title {
+  font-family: $fontAlumni; 
+  color: $light !important;
+}
+.title-no-color {
+  font-family: $fontAlumni; 
+}
+
+.text {
+  font-family: $fontZen;
+  color: $light !important;
+}
+.text-no-color{
+  font-family: $fontZen;
+}
+
+//HOVER
+.fly{
+   transition: all 0.3s ease-in;
+   &:hover{
+    transform: scale(1.2);
+    }
+  }
+
+//BORDER
+.max-rounded {
+  border-radius: 15px;
+}
+
