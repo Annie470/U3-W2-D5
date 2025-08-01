@@ -51,7 +51,7 @@ const CardMeteo = (props) => {
             {!isError && meteo && meteo.main && !disappear && (
               <>
                 <p className="text">
-                  In <span className="title fw-bold">{props.city}</span>... I see {meteo.weather[0].description}.
+                  In <span className="title fw-bold trill">{props.city}</span>... I see {meteo.weather[0].description}.
                 </p>{" "}
                 <p className="fs-3">
                   {(meteo.main.temp - 273.15).toFixed(1)}°C
@@ -59,7 +59,7 @@ const CardMeteo = (props) => {
                 <Button
                   className="border border-light fs-3 mt-3"
                   onClick={() => navigate(`/MeteoFive/${meteo.id}`)}>
-                  Wanna dare the <span className="title fw-bold">future</span>?
+                  Wanna dare the <span className="title fw-bold trill">future</span>?
                 </Button>
               </>
             )}

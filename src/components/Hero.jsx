@@ -56,7 +56,7 @@ const Hero = (props) => {
             <Row className="justify-content-center">
               <Col xs={10} className="text-center text fs-2">
                 <p>
-                  Hello, <span className="title fw-bold">{props.name}</span>
+                  Hello, <span className="title fw-bold trill">{props.name}</span>
                 </p>
               </Col>
             </Row>
@@ -67,7 +67,7 @@ const Hero = (props) => {
             <Row className="justify-content-center">
               <Col xs={10} className="text-center text fs-2">
                 <p>
-                  Hello, <span className="title fw-bold"> {props.name}</span> from {geo.city}
+                  Hello, <span className="title fw-bold trill">{props.name}</span> from {geo.city}
                 </p>
                 <CardMeteo city={geo.city} />
               </Col>

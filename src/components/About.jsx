@@ -6,8 +6,8 @@ const About = () => {
         <Row>
           <Col xs={12} className="text fs-2 text-center">
             <p>Behold!</p>
-            <p>Born of visions past, it takes shape upon a kindred project 
-                <span className="fw-bold title"> Arc4num</span>, it still lingers in the mists of time.
+            <p>Born of visions past, it takes shape upon a kindred project {' '}
+                <span className="fw-bold title trill">Arc4num</span>, it still lingers in the mists of time.
             </p>
             <p>Soon, by fate’s decree, it shall transcend the web and be reborn in the realm of React Native.</p>
           </Col>

@@ -54,7 +54,7 @@ const MeteoFive = () => {
             {meteo && meteo.city && (
               <>
                 <p>
-                  In <span className="title fw-bold">{meteo.city.name}</span>, such events are fated to unfold... It
+                  In <span className="title fw-bold trill">{meteo.city.name}</span>, such events are fated to unfold... It
                   shall be!
                 </p>
                 <Row className="row-cols-1 row-cols-md-2 row-cols-lg-5 py-5 gy-3 justify-content-center">

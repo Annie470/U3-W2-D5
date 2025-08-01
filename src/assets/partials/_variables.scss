@@ -34,13 +34,20 @@ $fontZen : "Zen Loop", cursive;
   font-family: $fontZen;
 }
 
-//HOVER
+//HOVER LOGO
 .fly{
    transition: all 0.3s ease-in;
    &:hover{
     transform: scale(1.2);
     }
+    animation: youSpinMeRound 3s linear infinite;
   }
+
+//TRILL
+.trill {
+  display: inline-block;
+   animation: trillMePlease 1.2s linear infinite alternate;
+}
 
 //BORDER
 .max-rounded {
